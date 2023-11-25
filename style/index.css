@@ -1,0 +1,883 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --main-color: #fe5e44;
+  --text-color: #6f6f6f;
+  --bg-color: #1e1c2a;
+  --big-font: 5rem;
+  --h2-font: 2.25rem;
+  --p-font: 0.9rem;
+}
+
+.landing-container {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 244, 242, 0.4) 0%,
+    #fff0ee 100%
+  );
+  
+  width: 100%;
+  max-height: 100%;
+  height: auto;
+  
+}
+
+section,
+header {
+  padding-right: 136px;
+  padding-left: 136px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+header {
+  z-index: 10200;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-right: 30px;
+  width: 100%;
+  padding-left: 30px;
+  box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding-bottom: 40px;
+}
+
+.logo-box {
+  width: 2.3rem;
+  height: 2.3rem;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+}
+.logo-name {
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-left: 18px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 46px;
+}
+
+.nav-list-child {
+  color: #000000;
+  opacity: 0.6;
+  font-size: 16px;
+  font-weight: 500;
+  font-weight: 500;
+}
+.nav-list-child:hover {
+  color: #fe5e44;
+  opacity: 1;
+  font-weight: 600;
+  transition: 0.4s;
+}
+.nav-list-child-active {
+  color: #fe5e44;
+  opacity: 1;
+  font-weight: 600;
+}
+
+.btn {
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+
+  border: none;
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: #fe5e44;
+}
+.btn-secondary {
+  background: rgba(254, 94, 68, 0.1);
+  border: 1px solid rgba(254, 94, 68, 0.2);
+}
+
+.btn-big {
+  padding: 15px 50px;
+  width: 100%;
+}
+.btn-medium {
+  padding: 10px 20px;
+}
+.btn a {
+  color: #ffff;
+  font-size: 16px;
+}
+.btn-secondary a {
+  color: #fe5e44;
+}
+.btn i {
+  font-size: 20px;
+}
+.btn-with-icon-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  transition: 0.4s;
+}
+
+.hero {
+  margin-top: 79px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  width: 100%;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-family: "Patua One", sans-serif;
+  color: #0e144a;
+}
+
+.hero-description {
+  font-size: 18px;
+  color: #6f6f6f;
+  line-height: 34px;
+  margin-top: 15px;
+}
+.hero-img img {
+  max-width: 100%;
+  width: 579.3px;
+  max-height: auto;
+  height: 652px;
+  object-fit: cover;
+}
+
+.btn-group {
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+}
+
+.review {
+  margin-top: 80px;
+  box-shadow: 0px 30px 60px rgba(254, 94, 68, 0.1);
+}
+.review-layer {
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 20px;
+
+  box-shadow: 20px -10px #ffff, 0px 30px 60px rgba(254, 94, 68, 0.1),
+    40px -20px #ffff;
+}
+
+.review-layer p {
+  color: #0e144a;
+}
+
+.star-icon {
+  width: 120px;
+  height: 20px;
+}
+
+.reviewer-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.reviewer-detail {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.reviewer-container img {
+  width: 55px;
+  height: 55px;
+}
+.reviewer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.review-content {
+  font-size: 16px;
+  color: #6f6f6f;
+  line-height: 26px;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.reviewer-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  color: #0000;
+  font-weight: 600;
+}
+
+.reviewer-job {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  color: #0e144a;
+  opacity: 0.6;
+  font-weight: 500;
+}
+.button-controller {
+  margin-left: 20px;
+  display: flex;
+  gap: 10px;
+}
+.btn-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: rgba(254, 94, 68, 0.1);
+  border: 1px solid rgba(254, 94, 68, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-circle-icon {
+  font-size: 25px;
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.benefit {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 130px;
+}
+.benefit-title {
+  font-size: 38px;
+  font-family: "Patua One", sans-serif;
+  color: #0e144a;
+  line-height: 52px;
+}
+
+.benefit-description {
+  font-size: 18px;
+  color: #6f6f6f;
+  line-height: 32px;
+  margin-top: 15px;
+  margin-top: 20px;
+}
+
+.benefit-info {
+  display: flex;
+  margin-top: 80px;
+  gap: 85px;
+}
+.benefit-info-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+
+.benefit-info-title {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: rgba(12, 27, 77, 0.6);
+}
+
+.benefit-info-content {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0c1b4d;
+}
+.benefit-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.benefit-card {
+  /* Primary Extra Light */
+
+  background: rgba(254, 94, 68, 0.05);
+  border-radius: 6px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.benefit-header {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.benefit-card-title {
+  font-size: 18px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+
+  color: #000000;
+}
+.benefit-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.benefit-card-description {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  color: #000000;
+}
+.feature {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.feature-image {
+  max-width: 100%;
+  width: 569.3px;
+  max-height: auto;
+  object-fit: cover;
+}
+
+.feature-title {
+  /* Section Title */
+
+  font-family: "Patua One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 52px;
+  /* or 137% */
+
+  /* Dark */
+
+  color: #0e144a;
+}
+
+.feature-content {
+  /* Section Description */
+
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+  margin-top: 20px;
+
+  /* Dark Light */
+
+  color: rgba(14, 20, 74, 0.6);
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.feature-card-img {
+  width: 35px;
+  height: 35px;
+}
+
+.feature-card-title {
+  /* Section Subtitle */
+
+  font-family: "Patua One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  /* Dark */
+
+  color: #0e144a;
+}
+
+.feature-card-description {
+  /* Section Description Small */
+
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  /* or 200% */
+
+  /* Dark Light */
+
+  color: rgba(14, 20, 74, 0.6);
+}
+
+.price {
+  background: rgba(254, 94, 68, 0.05);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 80px;
+}
+
+.price-text-group {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 20px;
+}
+
+.price-text-title {
+  /* Section Title */
+
+  font-family: "Patua One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 52px;
+  /* or 137% */
+
+  text-align: center;
+}
+
+
+.price-text-description{
+  font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+/* or 178% */
+
+text-align: center;
+
+/* Dark Light */
+
+color: rgba(14, 20, 74, 0.6);
+}
+
+
+.card-group{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 100px;
+  gap: 30px;
+}
+
+.card-price{
+  background-color: #ffff;
+  /* Shadow */
+
+box-shadow: 0px 15px 30px rgba(12, 14, 43, 0.05);
+border-radius: 10px 0px 0px 10px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+padding: 47px 50px;
+
+}
+
+.card-type{
+  font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: 0.1em;
+margin-top: 20px;
+
+/* Primary */
+
+color: #FE5E44;
+
+}
+
+.card-price-text{
+  /* Section Title */
+
+font-family: 'Patua One';
+font-style: normal;
+font-weight: 400;
+font-size: 38px;
+line-height: 52px;
+/* identical to box height, or 137% */
+
+margin-top: 20px;
+color: #0C0E2B;
+
+}
+
+.card-price-description {
+  /* Section Description */
+
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+/* or 178% */
+
+
+color: rgba(12, 14, 43, 0.6);
+
+
+}
+
+.list-feature-group{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.list-feature{
+ display: flex;
+ gap : 15px;
+ align-items: center;
+}
+.verify-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.list-feature-content {
+   font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+.button-container{
+  margin-top: 20px;
+  width: 100%;
+}
+
+.shadow-1{
+  box-shadow: 0px 20px 30px rgba(255, 86, 58, 0.15);
+}
+.text-lg{
+  font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+}
+
+.card-price-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:5px;
+}
+
+
+.testimoni{
+  background: rgba(254, 94, 68, 0.1);
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+}
+.testimoni-text-container{
+   display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.testimoni-text-title{
+   font-family: "Patua One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 52px;
+}
+.testimoni-text-description{
+    font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+/* or 178% */
+
+text-align: center;
+}
+.testimoni-card-container{
+  display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 100px;
+    grid-auto-flow: dense;
+ 
+}
+
+.testimoni-card{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 15px 30px rgba(12, 14, 43, 0.05);
+border-radius: 6px;
+padding: 30px;
+
+ 
+}
+.testimoni-card-content{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 26px;
+/* or 186% */
+
+
+/* Dark */
+
+color: #0E144A;
+margin-top: 20px;
+}
+
+.testimoni-card-avatar{
+ width: 55px;
+height: 55px;
+object-fit: cover; 
+}
+
+.testimoni-card-info{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.testimoni-star{
+  
+width: 120px;
+height: 20px;
+}
+.footer-price{
+    display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.footer-price-text{
+ font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 32px;
+margin-top: 40px;
+/* or 200% */
+
+text-align: center;
+
+color: rgba(14, 20, 74, 0.6);
+}
+.testimoni-card-avatar-title{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+.testimoni-card-avatar-desc{
+  
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 18px;
+color: rgba(14, 20, 74, 0.6);
+
+}
+.download{
+   display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 100px 0px;
+}
+.download-title{
+  font-family: 'Patua One';
+font-style: normal;
+font-weight: 400;
+font-size: 38px;
+line-height: 52px;
+}
+.download-desc{
+  /* Section Description */
+
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+/* or 178% */
+
+text-align: center;
+
+/* Dark Light */
+
+color: rgba(14, 20, 74, 0.6);
+
+margin-top: 20px;
+}
+.download-img-container{
+  display: flex;
+  gap: 15px;
+  justify-content: center
+  ;
+  margin-top: 20px;
+}
+.download-img{
+  
+width: 150px;
+height: 46px;
+
+}
+.footer{
+  padding: 100px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 30px;
+}
+.footer-col-1{
+  grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+.footer-logo{
+  width: 38px;
+height: 38px;
+}
+.footer-col-1-title{
+  font-family: 'Patua One';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.footer-col-1-desc{
+  /* Section Description */
+
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+
+
+/* Dark Light */
+
+color: rgba(14, 20, 74, 0.6);
+
+}
+.footer-list{
+  font-family: 'Patua One';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+margin-bottom: 20px;
+}
+.footer-list-item-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+
+  font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 26px;
+/* identical to box height, or 162% */
+
+
+/* Dark Light */
+
+color: rgba(12, 27, 77, 0.6);
+}
+.footer-network-container{
+  display: flex;
+  margin-top: 20px;
+}
+.footer-network-icon{
+  width: 44px;
+height: 44px;
+
+}
+.footer-price-text-bold{
+  /* Section Description Small */
+/* Section Description Small */
+
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 32px;
+/* or 200% */
+
+text-align: center;
+
+/* Dark Light */
+
+color: rgba(14, 20, 74, 0.6);
+
+
+}
+
